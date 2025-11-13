@@ -1,0 +1,57 @@
+<!--Oscar Romero 11-13-2025-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="vendingMachine.js"></script>
+<meta charset="UTF-8">
+<title>Vending Machine Loop</title>
+</head>
+<body>
+
+<h1> Using loops with snacks</h1>
+<h2>Question </h2>
+<code>for (let i = 1; i <= 5; i++) {
+  console.log("Snack #" + i + " given to customer");  }</code>
+ 
+<h3>Use the code above to answer these questions:
+ How many times does the loop execute?</h3>
+<!--Put the answer below here-->
+<p>It will run 5 times!!!!</p>
+
+<h3>What is the purpose of a function?</h3>
+<!--Put the answer below here-->
+<p>The purpose of a function is a resuable block of code that you can send argumennts that will do what you design it to do. <br>
+    It'll help with readability of the code. </p>
+
+<h2>Activity</h2>
+<h4>Check the console for snack messages!</h4>
+<!-- Link to the external script -->
+
+<script>
+let name = prompt("Enter your name");
+let entryCount = 0;
+let total = 0;
+let weeklyGas = 0;
+let averageGas = 0;
+function calcGasAvg(){
+
+    weeklyGas = parseFloat(prompt("Enter your first week's gas total. Enter -1 when you are done."));
+    while (weeklyGas != -1) {
+        total += weeklyGas;
+        entryCount += 1;
+        weeklyGas = parseFloat(prompt("Enter you next week's gas total. Enter -1 when you are done."));
+    }
+
+        averageGas = total / entryCount;
+    return averageGas;
+}
+    
+let gas = calcGasAvg();
+confirm("Total = " + total)
+confirm(name + "'s average weekly gas bill is $" + gas.toFixed(2));
+confirm("You entered " + entryCount + " gas totals.");
+
+</script>
+</body>
+</html>
