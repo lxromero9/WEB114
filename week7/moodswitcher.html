@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--Oscar Romero Hernandez 11-21-2025-->
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Mood Changer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+      transition: background-color 0.5s ease, color 0.5s ease;
+      min-height: 100vh;
+    }
+    h1 { font-size: 3rem; margin-bottom: 20px; 
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+    #moodButtons {
+      margin: 20px 0;
+    }
+    .mood-btn {
+      padding: 12px 20px;
+      margin: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      transition: transform 0.2s;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+    }
+    .mood-btn:hover { transform: scale(1.05); }
+    #moodDisplay { margin-top: 30px; font-size: 1.5rem; font-style: italic; 
+      font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;}
+  </style>
+</head>
+<body>
+  <h1>How are you feeling?</h1>
+  <p>Click a mood to change the vibe!</p>
+
+  <!-- Button container -->
+  <div id="moodButtons">
+    <button class="mood-btn" data-mood="happy">Happy</button>
+    <button class="mood-btn" data-mood="calm">Calm</button>
+    <button class="mood-btn" data-mood="excited">Excited</button>
+    <button class="mood-btn" data-mood="chill">Chill</button>
+    <button class="mood-btn" data-mood="mysterious">Mysterious</button>
+    <button class="mood-btn" data-mood="reset">Reset</button>
+  </div>
+
+  <p id="moodDisplay">Choose a mood...</p>
+
+  <p>Why is the JavaScript textContent property safer than innerHTML? <br>
+      :textContent is safer because it will read the content as literal text. This could prevent executing harmful HTML or scripts!</p>
+
+  <p>If use an HTML text box on a page and it has an attribute and a corresponding DOM property. How do the two elements relate? <br>
+      :They relate because they both do the same function but the DOM property can be changed but the HTML attribute will not.</p>
+
+  <p>What would happen to the text box with id="text" if it added this line to the code above:
+    text.textContent = "Hello!"<br>
+      :It will do nothing visible to the text box's value. </p>
+  <script src="mood.js"></script>
+</body>
+</html>
